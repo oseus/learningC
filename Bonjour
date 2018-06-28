@@ -1,0 +1,30 @@
+C premier pas.
+
+#include <stdio.h>         ----> bibliothèque C input output
+#include <stdlib.h>
+
+int main(void)             ----> fonction "main" OBLIGATOIRE pour compiler, 
+                                  (void) parametre = nul
+{
+  printf("Hello world !");
+  return 0;                ----> il faut toujours retourner quelque chose
+}                          ---->c'est pour ça qu'ici "int" -> "return 0"
+                           ----> compiler avec gcc nomdufichier.c -o nomvoulu
+                           ----> Executer en faisant " ./nomvoulu "
+
+
+Pour compiler faire:
+(console)
+gcc main.c -o hello  ----> gcc c'est le compilateur
+                     ----> main.c c'est le nom de la source(donc du fichier C)
+                     ----> -o c'est le nom de la fonction du compilateur pour      créer le fichier exe
+                     ----> hello est le nom du fichier exe
+
+Pour executer faire :
+(console)
+--------->  ./hello  ("./nomdufichierexe")
+
+
+Ne change pas :
+const int NOMBRE_DE_VIES_INITIALES = 5;
+----> les constantes ne changent jamais et on leur indique leur valeur dès le début. Elles sont noté entièrement en MAJUSCULE

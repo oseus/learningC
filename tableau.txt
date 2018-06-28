@@ -1,0 +1,24 @@
+[déclaration tableau]
+   <type> <nom_tableau>[X]; //Déclare avec valeur aléatoire
+
+[initialisation]
+   tableau[5] = {valeur1, valeur2, valeur3, valeur4, valeur5}
+   tableau[5] = {0} //toutes les cases valent 0
+   tableau[5] = {4} //seul la première case vaut 4 le reste vaut 0
+
+[Accès tableau]
+   tableau[X]   : élément d'indice X (X+1ème élément du tableau)
+   tableau      : adresse du tableau
+   *tableau     : premier élément du tableau
+   *(tableau +X): élément d'indice X
+
+   (NOTE)
+      tableau[5] = *(tableau + 5)
+
+
+[Afficher tableau]
+  int tableau[5] = {0};
+  int i;
+
+  for(i = 0; i < 5 ; i++)
+  printf("[%d]", tableau[i]);

@@ -1,0 +1,107 @@
+if (variable >= condition)
+{
+  printf ("ce que tu veux", condition(si necessaire));
+}
+
+//////////////////////
+else if
+il peut y avoir autant de elsif que nécessaire.
+
+///////////////////////
+
+ET---> && ----> if (age > 18 && age < 25)
+OU---> || ----> if (age > 30 || argent > 100000)
+NON-->  ! ----> if (!(age < 18))
+egal-> == ----> if (age == 18)
+
+/////////////////////
+Booleens
+FAUX = 0
+VRAI = 1(2,3,4,etc)
+
+/////////////////////
+SWITCH ----> pour éviter les répétion des else if
+toujours mettre BREAK à la fin d'un case!0
+exemple:
+
+switch (age)
+{
+case 2:
+  printf("Salut bebe !");
+  break;
+case 6:
+  printf("Salut gamin !");
+  break;
+case 12:
+  printf("Salut jeune !");
+  break;
+case 16:
+  printf("Salut ado !");
+  break;
+case 18:
+  printf("Salut adulte !");
+  break;
+case 68:
+  printf("Salut papy !");
+  break;
+default:
+  printf("Je n'ai aucune phrase de prete pour ton age  ");
+  break;
+}
+
+////////////////////////////
+TERNAIRE
+pour :
+if (majeur)
+  age = 18;
+else
+  age = 17;
+
+  écrire:
+  age = (majeur) ? 18 : 17;
+
+  ///////////////////////////
+WHILE
+exemple
+
+int nombreEntre = 0;
+
+while (nombreEntre != 47)
+{
+    printf("Tapez le nombre 47 ! ");
+    scanf("%d", &nombreEntre);
+}
+
+ou encore
+
+int compteur = 0;   //ou int i = 0
+
+while (compteur < 10)
+{
+    printf("La variable compteur vaut %d\n", compteur);
+    compteur++;
+}
+
+/////////////////////////////
+DO......WHILE
+-------> la boucle s'exécutera toujours au moins une fois, même-ci la condition n'est pas respecté
+exemple
+
+int compteur = 0;
+
+do
+{
+    printf("Salut les Zeros !\n");
+    compteur++;
+} while (compteur < 10);
+
+///////////////////////////////
+   FOR
+while en condensé avec la variable de départ, la condition et l'incrémentation sur une seule ligne
+
+int compteur;
+
+for (compteur = 0 ; compteur < 10 ; compteur++)
+{
+    printf("Salut les Zeros !\n");
+}

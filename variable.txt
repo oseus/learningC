@@ -1,0 +1,60 @@
+Drapeau pour afficher une variable :
+
+  %d : nombre entier (int)
+  %f : nombre flottant/double (float)
+  %c : character (char)
+  %s : chaine de caractere (texte)
+
+exemple =>
+
+int main(void)
+ {
+ int nombre_entier = 45;
+ printf("l'entier est %d !\n", nombre_entier);
+
+ return 0;
+ }
+
+ Pour Flottant, préciser le nombre de caractere après la virgule sinon il risque d'afficher bcp de chiffre apres la virgule =>
+
+   float nombre_flottant = 45.36;
+   printf("le flottant est %.2f", nombre_flottant) (juste %f aurait mit 45.360000);
+
+///////////////////////////////////////////////////////////
+
+"const" devant le type de la variable permet de faire en sorte que cette variable ne soit jamais modifier dans la suite du programme =>
+
+  const float PI = 3.14;
+
+const toujours en MAJUSCULE
+
+////////////////////////////////////////////////////////
+
+Pas très utile today mais à savoir si on manie d'ancien programme
+
+"register" devant le type de la variable, permet de la faire être stocker, non pas dans la mémoire vive comme les autres,
+mais dans les registres, ainsi elle était traité beaucoup plus rapidement.
+
+ register int nombre = 5;
+
+ "volatile" devant le type de la variable, permet de la faire ne jamais etre stocker dans les registres!
+
+////////////////////////////////////////////////////
+   
+	STOCKER l'INFORMATION DE l'UTILISATEUR DANS UNE VARIABLE : "scanf"
+
+"scanf" attend la réponse de l'utilisateur, il faut tout de même préciser quel type de donnée sera stocker, ainsi que préciser que cette donnée sera mit dans la variable voulu. ne jamais oublier "&" devant le nom de la variable, il précise bien l'adresse de la variable et non la valeur.
+
+int main(void)
+ {
+  int ageUtilisateur = 0;
+  
+  printf("Quel age as-tu? ";
+  scanf("%d", &ageUtilisateur);
+
+  printf("Vous avez %d ans!\n", ageUtilisateur);
+  
+  return 0;
+
+ }
+

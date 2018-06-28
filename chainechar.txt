@@ -1,0 +1,28 @@
+[Chaine de charactere]
+   Ce sont des TABLEAUX! donc les lettres sont placées les unes à la suite de l'autre.
+   Attention, il rajoute toujours en fin le charactere "/0" donc compter un character en plus.
+
+[initialisation]
+   signed char   => positif ou négatif  -127 / 127
+   unsigned char => positif 0 -> 255
+
+   #include <string.h> => pour fonction pour les strings
+
+[Affichage]
+   %s   => et non %c(qui fera qu'un seul character et non toute une phrase)
+   scanf=> pas de "&" car c'est un tableau donc le nom simple de la variable est une adresse
+
+   char lettre = 'A'  => printf(%d ,lettre); affiche la valeur ASCII de la lettre
+
+[Fonction des chaines]
+   strcpy()  : copie une chaîne dans une autre ( chaine à modifier, source à copier)
+   strlen()  : compte le nombre de lettre d'une chaine de caractere en %d. sans le charactere \0
+   strcmpt() : comparer deux chaines (lexicographiquement (ASCII))
+              si les deux mots sont les mêmes il renverra     0
+              si le mot un est avant le mot deux il renverra -1
+              si le mot un est après le mot deux il renverra  1
+   strcat()  : concaténer deux chaîne (fusionner)
+   strstr()  : chercher une chaine dans une autre
+   strchr()  : cherche 1ere occurence du caractere (retourne tout ce qui est après le caractere trouvé)
+
+   sprintf() : écrire dans une chaine. (tableau, "ce qu'il faut écrire dedans", nombre de charactere sans \0)

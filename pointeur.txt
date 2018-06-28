@@ -1,0 +1,18 @@
+Pointeur : variable contenant l'adresse d'une autre VARIABLE
+%p       : affiche l'adresse de la variable
+
+[VARIABLE]
+  maVariable  : valeur de la VARIABLE
+  &maVariable : adresse de la variable
+
+[POINTEUR]
+  *monPointeur = NULL ou *monPointeur = &maVariable
+  (déclaration et initialisation d'un pointeur)
+
+  monPointeur  : adresse de la variable pointée
+  *monPointeur : valeur de la variable pointée
+  &monPointeur : adresse du pointeur
+
+
+Le POINTEUR est plus rapide à l'exécution car il ne fait pas de copie il pointe juste l'adresse de la VARIABLE
+Il peut la modifier mais n'a pas besoin de la copier pour la modifier comme ferait un appel ou une modification simple de variable.

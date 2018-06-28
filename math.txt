@@ -1,0 +1,67 @@
+#include <math.h>
+
+//différentes fonctions Mathématique :(avec #include <math.h>)
+
+int nombre = 0;
+////////////////////////////////////// valeur absolue
+
+double absolu = 0, nombre = -27;
+
+absolu = fabs(nombre); // absolu vaudra 27
+
+////////////////////////////// arrondi au supérieur
+
+double dessus = 0, nombre = 52.71;
+
+dessus = ceil(nombre); // dessus vaudra 53
+
+////////////////////////////// arrondi inférieur
+
+double dessus = 0, nombre = 52.71;
+
+dessus = floor(nombre); // dessus vaudra 53
+
+/////////////////////////// puissance
+
+double resultat = 0, nombre = 2;
+
+resultat = pow(nombre, 3); // resultat vaudra 2^3 = 8
+
+////////////////////////// racine carrée
+
+double resultat = 0, nombre = 100;
+
+resultat = sqrt(nombre); // resultat vaudra 10
+
+///////////////////////////
+
+sin, cos, tan
+Ce sont les trois fameuses fonctions utilisées en trigonométrie.
+Le fonctionnement est le même, ces fonctions renvoient undouble.
+
+Ces fonctions attendent une valeur en radians.
+
+asin, acos, atan
+Ce sont les fonctions arc sinus, arc cosinus et arc tangente, d'autres fonctions de trigonométrie.
+Elles s'utilisent de la même manière et renvoient undouble.
+
+exp
+Cette fonction calcule l'exponentielle d'un nombre. Elle renvoie undouble(oui, oui, elle aussi).
+
+log
+Cette fonction calcule le logarithme népérien d'un nombre (que l'on note aussi « ln »).
+
+log10
+Cette fonction calcule le logarithme base 10 d'un nombre.
+
+
+///////////////////////////////
+
+Conversion d'un float en entier :
+
+ {
+  float nombre = 124.55;
+  int nombre_entier = (int)nombre;
+
+  return 0;
+ }
