@@ -1,0 +1,10 @@
+[Alllocation de mémoire]
+
+      sizeof(<donnee>)           : retourne la taille en octets d'une donnée
+
+      malloc(<taille_en_octet>)  : alloue dynamiquement une zone mémoire
+
+      free(<donnee_allouee>)     : libère la mémoire alloue dynamiquement
+
+      calloc(<taille en octets>, <donnee>): alloue la mémoire mais la met avant à 0
+      realloc(donnee, nouvelle taille) : realloue un espace mémoire

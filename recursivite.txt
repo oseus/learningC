@@ -1,0 +1,5 @@
+[Récursivité]
+     Principe de rappeler une fonction dans elle même.
+     Attention, si on ne lui attribue pas une limite, elle fera forcément une boucle infinie.
+     De base la recursivité montre chacun de ses empilements à part si on fait une Recursivité Terminale qui affiche que la fin de
+ses calculs tel que les factorielle.

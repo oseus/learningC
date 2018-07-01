@@ -23,6 +23,9 @@
               si le mot un est après le mot deux il renverra  1
    strcat()  : concaténer deux chaîne (fusionner)
    strstr()  : chercher une chaine dans une autre
+
    strchr()  : cherche 1ere occurence du caractere (retourne tout ce qui est après le caractere trouvé)
+   strrchr() : cherche la derniere occurence du caractere
+   strpbrk() : cherche le premier character dans le text se trouvant parmi les choix qu'on lui donne (text, xoijadmfcz)
 
    sprintf() : écrire dans une chaine. (tableau, "ce qu'il faut écrire dedans", nombre de charactere sans \0)

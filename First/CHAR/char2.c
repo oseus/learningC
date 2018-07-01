@@ -36,11 +36,17 @@ int main(int argc, char *argv[])
 
 //------------------------------------------------------------------------
 
-  // char phrase[256];
-  //
-  // sprintf(phrase, "abon", 4); // met le mot dans le tableau
-  //
-  // printf("%s\n", phrase );
+   char *resultat2 = strpbrk(text, "euo");
+   printf(" strpbrk euo trouve en premier : %s\n", resultat2 );
+
+//--------------------------------------------------------------------------
+
+  char phrase[100];
+  int age = 15;
+
+  sprintf(phrase, "abon %d ans?", age); // met le mot dans le tableau
+
+  printf("%s\n", phrase );
 
   return 0;
 }

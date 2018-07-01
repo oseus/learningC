@@ -25,6 +25,11 @@ int main(int argc, char *argv[])
 
   printf("Ton prénom a %d lettres\n", howMany); //affiche le nombre de lettre.
 
+//----------------------------------------------------------------
+
+char ascii = 'A';
+
+printf("l'ASCII de A est : %d\n", ascii );
 
 
   return 0;
